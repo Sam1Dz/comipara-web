@@ -1,12 +1,12 @@
 {
   "name": "comipara-web",
-  "version": "2025.823.0",
+  "version": "2025.823.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Sam1Dz/comipara-web.git"
   },
   "author": "Sam1Dz",
-  "license": "",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
