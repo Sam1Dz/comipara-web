@@ -1,4 +1,14 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin '../configs/heroui.ts';
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-fancy: var(--font-dm-serif-display);
+  --font-heading: var(--font-manrope);
+  --font-main: var(--font-inter);
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
