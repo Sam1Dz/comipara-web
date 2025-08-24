@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { Button, NavbarMenu, NavbarMenuItem } from '@heroui/react';
 import { clsx } from '@heroui/shared-utils';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { routes } from '~/configs/route';
@@ -11,7 +11,7 @@ export function MobileMenu() {
   const pathname = usePathname();
 
   return (
-    <NavbarMenu className="gap-0 px-3">
+    <NavbarMenu aria-label="Mobile navigation menu" className="gap-0 px-3">
       {routes.map((route) => {
         const isActive = route.href === pathname;
 
@@ -23,6 +23,7 @@ export function MobileMenu() {
           return (
             <NavbarMenuItem key={route.key}>
               <div
+                aria-label={route.label}
                 className={clsx(
                   'text-medium flex h-8 items-center px-3 font-semibold',
                   activeChild && 'text-primary',
@@ -30,11 +31,17 @@ export function MobileMenu() {
               >
                 {route.label}
               </div>
-              <div className="flex flex-col">
+              <div
+                aria-label={`${route.label} submenu`}
+                className="flex flex-col"
+                role="menu"
+              >
                 {route.children.map((child) => (
                   <Button
                     key={child.key}
                     fullWidth
+                    aria-current={child.href === pathname ? 'page' : undefined}
+                    aria-label={child.label}
                     as={Link}
                     className={clsx(
                       'text-small justify-start pl-6',
@@ -58,6 +65,8 @@ export function MobileMenu() {
           <NavbarMenuItem key={route.key}>
             <Button
               fullWidth
+              aria-current={isActive ? 'page' : undefined}
+              aria-label={route.label}
               as={Link}
               className="text-medium justify-start font-semibold"
               color={isActive ? 'primary' : undefined}

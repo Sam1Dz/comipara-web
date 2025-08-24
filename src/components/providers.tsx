@@ -9,7 +9,11 @@ import { NavbarLayout } from '~/components/layout/navbar';
 export function Providers({ children }: PropsWithChildren) {
   return (
     <HeroUIProvider reducedMotion="user">
-      <div className="font-main min-h-screen">
+      <div
+        aria-label="Comic Paradise main document"
+        className="font-main min-h-screen"
+        role="document"
+      >
         <NavbarLayout />
         {children}
       </div>

@@ -1,6 +1,5 @@
 'use client';
 
-import { Fragment } from 'react';
 import {
   Button,
   Dropdown,
@@ -8,10 +7,11 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from '@heroui/react';
-import { LuChevronDown } from 'react-icons/lu';
+import { clsx } from '@heroui/shared-utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { clsx } from '@heroui/shared-utils';
+import { Fragment } from 'react';
+import { LuChevronDown } from 'react-icons/lu';
 
 import { routes } from '~/configs/route';
 
@@ -29,25 +29,33 @@ export function DesktopMenu() {
           );
 
           return (
-            <Dropdown key={route.key} radius="sm">
+            <Dropdown
+              key={route.key}
+              aria-label={`${route.label} menu`}
+              radius="sm"
+            >
               <DropdownTrigger>
                 <Button
+                  aria-expanded={!!activeChild}
+                  aria-haspopup="menu"
+                  aria-label={route.label}
                   className={clsx(
                     'text-medium',
                     activeChild && 'font-semibold',
                   )}
                   color={activeChild ? 'primary' : undefined}
-                  endContent={<LuChevronDown />}
+                  endContent={<LuChevronDown aria-hidden="true" />}
                   radius="sm"
                   variant="light"
                 >
                   {route.label}
                 </Button>
               </DropdownTrigger>
-              <DropdownMenu>
+              <DropdownMenu aria-label={`${route.label} submenu`}>
                 {route.children.map((child) => (
                   <DropdownItem
                     key={child.key}
+                    aria-label={child.label}
                     as={Link}
                     className={clsx(child.href === pathname && 'font-semibold')}
                     color={child.href === pathname ? 'primary' : undefined}
@@ -64,6 +72,8 @@ export function DesktopMenu() {
         return (
           <Button
             key={route.key}
+            aria-current={isActive ? 'page' : undefined}
+            aria-label={route.label}
             as={Link}
             className={clsx('text-medium', isActive && 'font-semibold')}
             color={isActive ? 'primary' : undefined}

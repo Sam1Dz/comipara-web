@@ -13,18 +13,20 @@ import { DesktopMenu } from '~/components/layout/navbar/menu/desktop';
 import { MobileMenu } from '~/components/layout/navbar/menu/mobile';
 
 export function NavbarLayout() {
-  const [_, setIsMobileOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   return (
     <Navbar
       isBordered
+      aria-label="Main navigation"
       className="lg:h-20"
       maxWidth="xl"
+      role="navigation"
       onMenuOpenChange={setIsMobileOpen}
     >
       <NavbarBrand>
         <Image
-          alt="Logo"
+          alt="Comic Paradise Logo"
           className="h-12 w-[42px] lg:h-16 lg:w-[56px]"
           height={64}
           src="/logo.png"
@@ -39,7 +41,9 @@ export function NavbarLayout() {
 
       {/* MOBILE MENU */}
       <NavbarContent className="lg:hidden" justify="end">
-        <NavbarMenuToggle />
+        <NavbarMenuToggle
+          aria-label={isMobileOpen ? 'Close mobile menu' : 'Open mobile menu'}
+        />
       </NavbarContent>
       <MobileMenu />
     </Navbar>

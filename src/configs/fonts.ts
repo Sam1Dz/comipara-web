@@ -1,4 +1,4 @@
-import { DM_Serif_Display, Manrope, Inter } from 'next/font/google';
+import { DM_Serif_Display, Inter, Manrope } from 'next/font/google';
 
 export const DMSerifDisplay = DM_Serif_Display({
   subsets: ['latin'],
