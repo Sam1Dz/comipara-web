@@ -19,18 +19,18 @@ export function NavbarLayout() {
     <Navbar
       isBordered
       aria-label="Main navigation"
-      className="lg:h-20"
       maxWidth="xl"
       role="navigation"
       onMenuOpenChange={setIsMobileOpen}
     >
       <NavbarBrand>
+        {/* DESKTOP LOGO */}
         <Image
           alt="Comic Paradise Logo"
-          className="h-12 w-[42px] lg:h-16 lg:w-[56px]"
-          height={64}
-          src="/logo.png"
-          width={56}
+          className="h-6 w-[129px] lg:h-8 lg:w-[172px]"
+          height={32}
+          src="/logo-horizontal.png"
+          width={172}
         />
       </NavbarBrand>
 

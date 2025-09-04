@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="070e91a6-d387-4ac1-aca4-f77c4675f59d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/navbar/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,7 @@
       <recent name="D:\Projects\Applications\Standalone\comipara-web\src\styles" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.Next.js: server-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -159,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
-        <item itemvalue="npm.lint:fix" />
         <item itemvalue="npm.outdated" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.lint:fix" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +190,9 @@
       <workItem from="1755950989941" duration="18075000" />
       <workItem from="1756714929615" duration="353000" />
       <workItem from="1756715303417" duration="466000" />
-      <workItem from="1756715785823" duration="440000" />
+      <workItem from="1756715785823" duration="528000" />
+      <workItem from="1756854315169" duration="43000" />
+      <workItem from="1757026768165" duration="2340000" />
     </task>
     <servers />
   </component>
