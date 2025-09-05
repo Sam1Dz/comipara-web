@@ -43,7 +43,7 @@ export function FooterParticipate() {
         </h4>
         <Link
           aria-label="View event location on Google Maps"
-          className="flex items-start space-x-3"
+          className="flex w-fit items-start space-x-3"
           href="https://maps.app.goo.gl/yyFQECL5dZFmFVfn6"
           rel="noopener noreferrer"
           target="_blank"

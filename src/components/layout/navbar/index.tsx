@@ -29,7 +29,7 @@ export function NavbarLayout() {
           alt="Comic Paradise Logo"
           className="h-6 w-[129px] lg:h-8 lg:w-[172px]"
           height={32}
-          src="/logo-horizontal.png"
+          src="/logo-horizontal-primary.png"
           width={172}
         />
       </NavbarBrand>

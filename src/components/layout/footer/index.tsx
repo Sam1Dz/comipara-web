@@ -10,7 +10,7 @@ export function FooterLayout() {
   return (
     <footer
       aria-label="Footer"
-      className="bg-primary text-primary-foreground py-16"
+      className="bg-primary text-primary-foreground pt-16 pb-8"
       role="contentinfo"
     >
       <div className="mx-auto max-w-7xl px-6">
@@ -21,13 +21,13 @@ export function FooterLayout() {
         </div>
         <Divider className="bg-primary-foreground/20 mt-12 mb-8" />
         <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-          <p className="text-primary-foreground/60 text-small">
+          <p className="text-primary-foreground/80 text-small">
             &copy;&nbsp;2025 Comic Paradise (COMIPARA). Organized by Comipara
             Pro.
           </p>
           <Link
             aria-label="Email comiparaid@gmail.com"
-            className="text-primary-foreground/60 text-small"
+            className="text-primary-foreground/80 text-small"
             href="mailto:comiparaid@gmail.com"
             rel="noopener noreferrer"
             target="_blank"
