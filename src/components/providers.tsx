@@ -1,14 +1,17 @@
 'use client';
 
-import type { PropsWithChildren } from 'react';
-
 import { HeroUIProvider } from '@heroui/react';
+import React from 'react';
+import { useRouter } from 'next/navigation';
 
+import { FooterLayout } from '~/components/layout/footer';
 import { NavbarLayout } from '~/components/layout/navbar';
 
-export function Providers({ children }: PropsWithChildren) {
+export function Providers({ children }: React.PropsWithChildren) {
+  const router = useRouter();
+
   return (
-    <HeroUIProvider reducedMotion="user">
+    <HeroUIProvider navigate={router.push} reducedMotion="user">
       <div
         aria-label="Comic Paradise main document"
         className="font-main min-h-screen"
@@ -16,6 +19,7 @@ export function Providers({ children }: PropsWithChildren) {
       >
         <NavbarLayout />
         {children}
+        <FooterLayout />
       </div>
     </HeroUIProvider>
   );

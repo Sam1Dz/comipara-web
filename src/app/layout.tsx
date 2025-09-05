@@ -1,12 +1,13 @@
-import type { PropsWithChildren } from 'react';
 import '~/styles/globals.css';
+
+import React from 'react';
 
 import { Providers } from '~/components/providers';
 import { DMSerifDisplay, InterFont, ManropeFont } from '~/configs/fonts';
 
 export { metadata } from '~/configs/site';
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="id">
       <body

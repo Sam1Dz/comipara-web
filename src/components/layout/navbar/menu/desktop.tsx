@@ -10,7 +10,7 @@ import {
 import { clsx } from '@heroui/shared-utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Fragment } from 'react';
+import React from 'react';
 import { LuChevronDown } from 'react-icons/lu';
 
 import { routes } from '~/configs/route';
@@ -19,7 +19,7 @@ export function DesktopMenu() {
   const pathname = usePathname();
 
   return (
-    <Fragment>
+    <React.Fragment>
       {routes.map((route) => {
         const isActive = route.href === pathname;
 
@@ -85,6 +85,6 @@ export function DesktopMenu() {
           </Button>
         );
       })}
-    </Fragment>
+    </React.Fragment>
   );
 }

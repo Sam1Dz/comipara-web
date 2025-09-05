@@ -7,13 +7,13 @@ import {
   NavbarMenuToggle,
 } from '@heroui/react';
 import Image from 'next/image';
-import { useState } from 'react';
+import React from 'react';
 
 import { DesktopMenu } from '~/components/layout/navbar/menu/desktop';
 import { MobileMenu } from '~/components/layout/navbar/menu/mobile';
 
 export function NavbarLayout() {
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = React.useState(false);
 
   return (
     <Navbar
