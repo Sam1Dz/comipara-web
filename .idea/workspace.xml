@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="070e91a6-d387-4ac1-aca4-f77c4675f59d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo-horizontal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/participate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer/participate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lock" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,7 @@
       <recent name="D:\Projects\Applications\Standalone\comipara-web\src\styles" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Next.js: server-side">
+  <component name="RunManager" selected="npm.outdated">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -201,6 +198,9 @@
       <workItem from="1757038091790" duration="17000" />
       <workItem from="1757038119902" duration="5412000" />
       <workItem from="1757049958341" duration="10709000" />
+      <workItem from="1757664408537" duration="678000" />
+      <workItem from="1757665562119" duration="928000" />
+      <workItem from="1757734126735" duration="3716000" />
     </task>
     <servers />
   </component>
